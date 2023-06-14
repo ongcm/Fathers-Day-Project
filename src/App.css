@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body{
+    background-color: beige;
+    display: inline-block;
+    font-family: "Lustria", serif;
+    color: white;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+    width: 8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 35%;
+    margin: auto;
+    top: 3em;
+    color: midnightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h4{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20%;
+    margin: auto;
+    top: 10em;
+    color: midnightblue;
 }
 
-.App-link {
-  color: #61dafb;
+#h2div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 40%;
+    margin: auto;
+    top: 20em;
+    color: midnightblue;
+    opacity: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#div1{
+    left: 5em; 
+    right: 0;
+    top: 30%; 
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    z-index: 1;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7{
+    opacity: 100%;
+    width: 10%;
+    transition: 1s all ease-in-out;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover{
+    opacity: 100%;
+    width: 20%;
+    transition: 1s all ease-in-out;
+}
+
+#div1:hover + h2{
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+h2{
+    opacity: 100%;
+    transition: 3s all ease-in-out;
 }

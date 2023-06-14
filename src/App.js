@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>A Tribute to Our Beloved Father</h1>
+      <h4>Hover over each slide to enlarge it</h4>
+      <div id="div1">
+        <img id="img1" src="1.png"></img>
+        <img id="img2" src="2.png"></img>
+        <img id="img3" src="3.png"></img>
+        <img id="img4" src="4.png"></img>
+        <img id="img5" src="5.png"></img>
+        <img id="img6" src="6.png"></img>
+        <img id="img7" src="7.png"></img>
+      </div>
+      <h2 id="h2div">We love you just like you love us: unconditionally.</h2>
+    </>
   );
 }
 

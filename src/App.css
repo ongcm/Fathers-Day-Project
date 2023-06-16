@@ -1,53 +1,47 @@
 body{
     background-color: beige;
-    display: inline-block;
     font-family: "Lustria", serif;
     color: white;
-    overflow: hidden;
 }
 
 img{
     width: 8%;
 }
 
-h1{
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 35%;
-    margin: auto;
-    top: 3em;
+h1, h2, h4{
     color: midnightblue;
+    margin: 2% 3%; 
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
 }
 
 h4{
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 20%;
-    margin: auto;
-    top: 10em;
-    color: midnightblue;
+    font-size: 1em;
+    margin-bottom: 3%;
+}
+
+#all-items{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2% 0%;
 }
 
 #h2div{
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 40%;
-    margin: auto;
-    top: 20em;
-    color: midnightblue;
     opacity: 100%;
 }
 
 #div1{
-    left: 5em; 
-    right: 0;
-    top: 30%; 
-    margin: auto;
-    position: absolute;
-    width: 90%;
+    text-align: center;
     z-index: 1;
 }
 
@@ -55,13 +49,13 @@ h4{
     opacity: 100%;
     width: 10%;
     transition: 1s all ease-in-out;
-    margin: 1em;
     border-radius: 10px;
+    margin: 1%;
 }
 
 #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover{
     opacity: 100%;
-    width: 20%;
+    width: 25%;
     transition: 1s all ease-in-out;
 }
 
@@ -73,4 +67,72 @@ h4{
 h2{
     opacity: 100%;
     transition: 3s all ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 599px){
+    #div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7{
+        opacity: 100%;
+        width: 20%;
+        transition: 1s all ease-in-out;
+        border-radius: 10px;
+        margin: 1%;
+    }
+    
+    #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover{
+        opacity: 100%;
+        width: 35%;
+        transition: 1s all ease-in-out;
+    }
+
+    #div1:hover + h2{
+        opacity: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    h2{
+        opacity: 100%;
+        transition: 3s all ease-in-out;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 300px){
+    #div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7{
+        opacity: 100%;
+        width: 20%;
+        transition: 1s all ease-in-out;
+        border-radius: 10px;
+        margin: 1%;
+    }
+    
+    #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover{
+        opacity: 100%;
+        width: 50%;
+        transition: 1s all ease-in-out;
+    }
+
+    #div1:hover + h2{
+        opacity: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    h2{
+        opacity: 100%;
+        transition: 3s all ease-in-out;
+    }
 }

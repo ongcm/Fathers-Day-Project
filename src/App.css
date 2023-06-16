@@ -136,3 +136,37 @@ h2{
         transition: 3s all ease-in-out;
     }
 }
+
+@media (pointer:none), (pointer:coarse) {
+    #div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7{
+        opacity: 100%;
+        width: 20%;
+        transition: 1s all ease-in-out;
+        border-radius: 10px;
+        margin: 1%;
+    }
+    
+    #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover{
+        opacity: 100%;
+        width: 70%;
+        transition: 1s all ease-in-out;
+    }
+
+    #div1:hover + h2{
+        opacity: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    h2{
+        opacity: 100%;
+        transition: 3s all ease-in-out;
+    }
+}
